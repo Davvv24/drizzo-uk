@@ -1,0 +1,81 @@
+:root {
+  color-scheme: dark;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  color: #c7d1df;
+  background: #101b2c;
+  font-synthesis: none;
+  --muted: #9baec5;
+  --heading: #edf3fa;
+  --link: #99bff1;
+  --line: #2a3a50;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+html { scroll-padding-top: 24px; }
+::selection { background: #36577f; color: white; }
+a { color: var(--link); text-underline-offset: 4px; }
+a:hover { color: white; }
+a:focus-visible { outline: 2px solid var(--link); outline-offset: 5px; }
+.page { width: min(760px, calc(100% - 48px)); margin: 0 auto; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 27px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: .85rem;
+}
+header a { text-decoration: none; }
+.site-name { font-family: ui-monospace, Consolas, monospace; color: var(--heading); }
+nav { display: flex; gap: 24px; }
+nav a { color: var(--muted); }
+
+.intro { padding: 48px 0 34px; }
+h1, h2, h3 { color: var(--heading); line-height: 1.3; }
+h1 { font-size: 2.35rem; font-weight: 650; letter-spacing: -1.2px; margin: 0 0 9px; }
+.subtitle { color: var(--muted); margin-top: 0; }
+.intro > p { max-width: 640px; margin-bottom: 16px; }
+.profile-links { display: flex; flex-wrap: wrap; gap: 12px 24px; font-size: .88rem; margin-top: 22px; }
+
+main > section + section { border-top: 1px solid var(--line); padding: 28px 0 32px; }
+h2 { font-size: 1.1rem; font-weight: 600; margin: 0 0 22px; }
+.projects { list-style: none; margin: 0; padding: 0; }
+.projects li { margin-bottom: 25px; }
+.project-title { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; }
+h3 { font-size: 1rem; font-weight: 550; margin: 0; }
+h3 a { text-decoration: none; }
+h3 a:hover { text-decoration: underline; }
+h3 a span { font-size: .8rem; margin-left: 5px; }
+.project-type { color: var(--muted); font-family: ui-monospace, Consolas, monospace; font-size: .73rem; white-space: nowrap; }
+.projects p { margin: 5px 0 0; max-width: 650px; font-size: .92rem; }
+.more { font-size: .85rem; }
+.experience { margin: 0; font-size: .9rem; }
+.experience > div { margin-bottom: 19px; }
+.experience > div:last-child { margin-bottom: 0; }
+dt { color: var(--heading); font-weight: 500; }
+dd { margin: 3px 0 0; color: var(--muted); }
+footer { display: flex; justify-content: space-between; gap: 20px; border-top: 1px solid var(--line); padding: 22px 0 35px; color: var(--muted); font-size: .78rem; }
+.skip-link { position: absolute; top: -80px; background: #101b2c; padding: 10px; }
+.skip-link:focus { top: 0; }
+
+@media (max-width: 520px) {
+  .page { width: calc(100% - 36px); }
+  header { gap: 15px; font-size: .8rem; padding: 22px 0; }
+  nav { gap: 15px; }
+  .intro { padding-top: 35px; }
+  h1 { font-size: 2rem; }
+  .project-title { align-items: start; flex-direction: column; gap: 2px; }
+  .profile-links { gap: 10px 20px; }
+}
+
+@media print {
+  :root { color-scheme: light; color: #222; background: white; --heading: #111; --muted: #444; --link: #222; --line: #ccc; }
+  .page { width: 100%; }
+  header, footer { display: none; }
+  .intro { padding-top: 0; }
+  .projects li, .experience > div { break-inside: avoid; }
+}
