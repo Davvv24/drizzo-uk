@@ -19,10 +19,10 @@ export const projects = [
     description: 'A small module for generating images of interfering waves.',
   },
   {
-    name: 'HackTheBurgh XI',
-    url: 'https://github.com/Davvv24/HTB25',
+    name: 'HackTheBurgh XIII (2026)',
+    url: 'https://github.com/Davvv24/HTB-2026',
     type: 'Team project',
-    description: 'Our work on the Viridien satellite image scaling challenge at HackTheBurgh XI.',
+    description: 'Our work on the Bank of Scotland challenge at HackTheBurgh XIII.',
   },
 ];
 
