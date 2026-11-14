@@ -1,6 +1,18 @@
 // Edit the project list and short biography here.
 export const projects = [
   {
+    name: 'Project Aetherial',
+    url: 'https://github.com/endeavourrockets/project-aetherial-framework',
+    type: 'Endeavour · C / C++',
+    description: 'Our payload team\'s CubeSat software framework for STM32, with a shared CMake build and separate hardware experiments. I lead the payload software team.',
+  },
+  {
+    name: 'A-StaR rocket simulation',
+    url: 'https://github.com/endeavourrockets/A-StaR-Unity-Rocket-Simulation',
+    type: 'Endeavour · Unity / C#',
+    description: 'A prototype for testing active rocket stabilisation, with canard controls, simplified aerodynamics and flight logging. Part of my simulation work with Endeavour.',
+  },
+  {
     name: 'Orbits',
     url: 'https://github.com/Davvv24/Orbits',
     type: 'Python',
