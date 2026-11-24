@@ -5,6 +5,10 @@
   line-height: 1.65;
   color: #c7d1df;
   background: #101b2c;
+  background-image:
+    radial-gradient(ellipse at 0% 0%, #24436b 0%, transparent 55%),
+    radial-gradient(ellipse at 100% 75%, #1b3154 0%, transparent 55%),
+    linear-gradient(145deg, #14253d 0%, #101b2c 55%, #111c33 100%);
   font-synthesis: none;
   --muted: #9baec5;
   --heading: #edf3fa;
@@ -13,7 +17,7 @@
 }
 
 * { box-sizing: border-box; }
-body { margin: 0; }
+body { margin: 0; min-height: 100vh; }
 html { scroll-padding-top: 24px; }
 ::selection { background: #36577f; color: white; }
 a { color: var(--link); text-underline-offset: 4px; }

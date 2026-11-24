@@ -21,8 +21,8 @@ function App() {
           <p className="subtitle">Physics student at the University of Edinburgh.</p>
           <p>I'm interested in scientific computing and machine learning. I mostly work in Python, with some C++ for embedded projects. This is a small collection of things I've worked on.</p>
           <div className="profile-links">
-            <a href="https://github.com/Davvv24">GitHub ↗</a>
-            <a href="https://www.linkedin.com/in/drizzo-uk">LinkedIn ↗</a>
+            <a href="https://github.com/Davvv24">GitHub -&gt;</a>
+            <a href="https://www.linkedin.com/in/drizzo-uk">LinkedIn -&gt;</a>
             <a href="mailto:drizzo.uk@gmail.com">drizzo.uk@gmail.com</a>
           </div>
         </section>
@@ -32,14 +32,14 @@ function App() {
             {projects.map(project => (
               <li key={project.url}>
                 <div className="project-title">
-                  <h3><a href={project.url}>{project.name} <span aria-hidden="true">↗</span></a></h3>
+                  <h3><a href={project.url}>{project.name} <span aria-hidden="true">-&gt;</span></a></h3>
                   <span className="project-type">{project.type}</span>
                 </div>
                 <p>{project.description}</p>
               </li>
             ))}
           </ul>
-          <a className="more" href="https://github.com/Davvv24?tab=repositories">Other repositories on GitHub →</a>
+          <a className="more" href="https://github.com/Davvv24?tab=repositories">Other repositories on GitHub -&gt;</a>
         </section>
         <section id="experience" aria-labelledby="experience-heading">
           <h2 id="experience-heading">A bit of background</h2>
